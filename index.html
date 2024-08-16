@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+           color:aliceblue;
+        }
+        
+       .container{
+           background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+           url(hero.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .nav{
+           display: flex;
+          flex-direction: column;
+          justify-content: center;
+           align-items: center;
+           margin: 50px;
+          
+        }
+        .head{
+          margin-bottom: 20px;
+        }
+       ul{
+        min-width:400px ;
+        
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+      
+      }
+      .contents{
+       height: 40%;
+       display: flex;
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+           
+      }
+      h1{
+        font-size: 60px;
+        
+        padding: 10px;
+        text-align: center;
+        min-width:400px ;
+        
+      }
+      h2{
+        font-size: px;
+        padding: 10px;
+      }
+      h3{
+       font-size: 25px;
+      }
+      button{
+        margin: 10px;
+        margin-top: 30px;
+        background-color:dodgerblue;
+        min-width: 200px;
+        min-height: 40px;
+        border: none;
+        
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      button:hover{
+        background-color: lightblue;
+      }
+      @media(min-width:800px){
+        .nav{
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .head h3{
+         width: 300px;
+        }
+        
+      }
+      /* css for product*/
+      .containers{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+       
+        
+        
+    }
+    
+       .contents{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       color: #333;
+       }
+       
+       .heads p{
+       
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 20px;
+        line-height: 1.5;
+        
+        color: #000;
+       }
+       .heads h1{
+        color: #000;
+       }
+   
+       
+      .image{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        }
+      .imgA{
+       
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+        
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        
+        
+      }
+      .imgB{
+        
+       
+        width: 100%;
+        display: flex;
+       
+        height: 80%;
+       
+        justify-content: center;
+        
+      }
+      #im1{
+       
+        width: 20%;
+        height: 500px;
+        margin-left: 20px;
+       
+      }
+      #im2{
+        width:40%;
+        height:500px;
+        margin-left: 30px;
+      
+      }
+      #im3{
+        width: 40%;
+        height: 500px;
+      
+        margin-top: 30px;
+      
+      }
+      #im4{
+        height: 500px;
+        width: 20%;
+        margin-left: 30px;
+        margin-top: 30px;
+       
+      }
+      .borders{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: 150px;
+        border: 2px solid dodgerblue;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      @media(min-width:800px){
+        
+        .image{
+            margin-top: 80px;
+          width:100%;
+          height: 70%;
+          
+        }
+        
+      }
+      /* css for about*/
+      .containeres{
+           
+          margin: 20px;
+           display: flex;
+           flex-direction: column;
+       }
+       
+     
+     .about{
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+      
+     }
+     .containeres h3{
+       color: black;
+     }
+     p{
+       text-align: center;
+       margin-bottom: 20px;
+       line-height: 1.6;
+       color: #000;
+     }
+     .containeres h1{
+       text-align: center;
+       margin-bottom: 20px;
+       color: #000;
+     }
+     .containeres h2{
+       text-align: center;
+       margin-bottom: 20px;
+       color: #000;
+     }
+    
+     .border{
+       display: flex;
+       width: 150px;
+       border: 2px solid dodgerblue;
+       margin-bottom: 20px;
+     }
+     @media(min-width:800px){
+
+       .contentes{
+           width: 100%;
+           margin-top: 40px;
+          display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+       }
+       .photo{
+           width:300px;
+           height: 300px;
+       }
+       .web{
+           width:300px;
+           height: 300px;
+       }
+       .edit{
+           width:300px;
+           height: 300px;
+       }
+       .about{
+           margin-left: 80px;
+           margin-right: 80px;
+           justify-content: center;
+           align-items: center;
+       }
+      
+     }
+     /* css contact */
+    
+     .containera{
+          
+            display: flex;
+            flex-direction: column;
+        }
+        
+      
+      .bordera{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 150px;
+        border: 2px solid dodgerblue;
+       
+       
+      }
+      .header{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: black;
+        
+        
+
+      }
+      .header h3{
+        color: black;
+      }
+      .contenta{
+        display:flex;
+      
+        width: 100%;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .containera h1{
+        text-align: center;
+        line-height: 1.8;
+        color: #000;
+      }
+      input{
+        width: 250px;
+        height: 35px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        outline: none;
+        border:1px solid gray;
+      }
+      button{
+        width:250px;
+        height: 35px;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        border-radius: 5px;
+        border: none;
+        background-color: #3388ff;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1rem;
+        cursor: pointer;
+     
+        
+      }
+      button:hover{
+        background-color: lightblue;
+      }
+      .footer{
+        display: flex;
+       flex-direction: column;
+        
+        width:100%;
+        height: 500px;
+       
+        
+      }
+      .btn{
+        display: flex;
+        justify-content: center;
+      }
+      .footer-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        background-color: #333;
+        margin-top: 20px;
+        height: 50%;
+        width: 100%;
+
+
+      }
+      .footer-text p{
+        color: gray;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      strong{
+        color: lightgray;
+      }
+      .color{
+        width: 100%;
+        height:50%;
+        background-color: black;
+      }
+      @media(min-width:800px){
+        .nav{
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .em{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            width: 50%;
+        }
+        input{
+            width:450px
+        }
+        .float-text
+        {
+            height: 70%;
+        }
+        .color{
+            height: 30%;
+        }
+        .head{
+          justify-content: center;
+          align-items: start;
+          width:60%;
+          text-align:center;
+          margin-top: 0;
+        }
+        .contents p{
+          width: 70%;
+        }
+        .contents h1{
+          padding: 0;
+        }
+        .footer{
+          align-items: end;
+        }
+        
+      }
+    
+          
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="nav">
+          <div class="head">  <h3>Website Logo</h3></div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="contents">
+                <h1>Responsive Template Page</h1>
+              <h2>Full Stack Trainning Course</h2>
+                <button>Download It Here</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="product" class="containers">
+         
+   
+    <div class="heads">
+        <div class="contents">
+            <h1>Some Of Our work</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus neque facere reiciendis cum aut dolor mollitia corporis, quod, nobis eum accusamus molestiae beatae sit porro iste necessitatibus dolorem, laboriosam veritatis!</p>
+        </div>
+    
+    </div>
+    <div class="borders"></div>
+    <div class="image">
+        <div class="imgA">
+            
+                <img id="im1" src="coast.jpg" alt="coast">
+            
+           
+                <img id="im2"src="island.jpg" alt="">
+            
+        </div>
+        <div class="imgB">
+            
+                <img id="im3"src="balloon.jpg" alt="">
+            
+            
+                <img id= "im4"src="mountain.jpg" alt="">
+            
+
+        </div>
+    </div>
+   
+  
+    
+</div>
+<div id="about" class="containeres">
+        
+        
+  <div class="about">
+      <div class="header">
+        <h1>Features And Services</h1>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, repellat exercitationem aliquam perferendis voluptatibus eum ea rem repudiandae sit, fugit quia accusantium ducimus. Sint blanditiis rem corrupti adipisci similique suscipit!</p>
+
+
+      </div>
+      <div class="border"></div>
+      <div class="contentes">
+        <div class="photo">
+            <h2>Photography</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consectetur enim repellat quos ullam atque repellendus obcaecati necessitatibus ut explicabo! Nulla ipsa laboriosam sapiente ad.</p>
+        </div>
+        <div class="web">
+            <h2>Web Devlopment</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat quae sed rem. Possimus fugit fugiat corrupti amet, quae, libero nisi ad vel sunt dolores impedit ipsam praesentium doloremque optio! Ducimus!</p>
+
+        </div>
+        <div class="edit">
+            <h2>Content Editing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque nemo hic, nisi rem exercitationem sed laudantium aut enim, nobis, quia doloremque dolore quibusdam pariatur. Aspernatur et esse eaque ut excepturi.</p>
+
+        </div>
+  </div>
+
+  </div>
+
+</div>
+
+<div id="contact" class="containera">
+        
+  <div class="contenta">
+      <div class="heada">
+        <h1>Join Our Newsletters</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Cum, mollitia itaque necessitatibus error assumenda beatae, dolore eos hic inventore exercitationem, ratione ipsa aspernatur laboriosam! Quas!</p>
+      </div>
+      <div class="bordera">
+
+      </div>
+      <div class="em">
+          <div class="email">
+            <input type="email" placeholder="Email">
+           
+          </div>
+          <div class="btn">
+            <button>Subscribe Now</button>
+          </div>
+      </div>
+  </div class="contnenta">
+  <div class="footer">
+      <div class="footer-text">
+        <p>made by <strong>tutorializine</strong>. images countesy to <strong>unsplash</strong>. 
+             no attribution reauires. you can renove this footer
+      </div>
+      <div class="color">
+        </div>
+  </div>
+
+</div>
+    
+
+</body>
+</html>
